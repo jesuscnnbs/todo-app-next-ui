@@ -59,5 +59,6 @@ pnpm add @nextui-org/spinner
 pnpm add @nextui-org/input
 pnpm add @nextui-org/link
 pnpm add @nextui-org/modal
+pnpm add @nextui-org/tooltip
 ```
 

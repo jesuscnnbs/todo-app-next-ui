@@ -3,26 +3,22 @@
     {
       "id": 1,
       "title": "Hacer homework",
-      "completed": false,
-      "deleted": false
+      "completed": false
     },
     {
       "id": 2,
       "title": "Proyecto IT",
-      "completed": false,
-      "deleted": false
+      "completed": false
     },
     {
       "id": 3,
       "title": "Comprar pastillas farmacia",
-      "completed": false,
-      "deleted": false
+      "completed": false
     },
     {
       "id": 4,
       "title": "Arreglar retrete",
-      "completed": false,
-      "deleted": false
+      "completed": false
     }
   ]
 }
