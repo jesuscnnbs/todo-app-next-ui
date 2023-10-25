@@ -8,7 +8,7 @@ import {
   } from "@nextui-org/table";
 import {Tooltip} from "@nextui-org/tooltip"
 
-interface Props {
+type Props = {
     todoes: Todo[];
 }
 
@@ -26,6 +26,14 @@ const columns = [
 
 
 export default function TodoListComponent({todoes}: Props) {
+  const deleteTask = async(id: number) => {
+    await fetch(`http://localhost:3001/todos/${id}`, {
+      method: "DELETE",
+      headers: {
+        "Content-Type": "application/json",
+      }
+    });
+  }
   const renderCellContent = (user: Todo, columnKey: React.Key) => {
     switch (columnKey) {
       case "status":
@@ -45,7 +53,7 @@ export default function TodoListComponent({todoes}: Props) {
                 </span>
               </Tooltip>
               <Tooltip color="danger" content="Delete user">
-                <span className="text-lg text-danger cursor-pointer active:opacity-50">
+                <span onClick={() => deleteTask(user.id)} className="text-lg text-danger cursor-pointer active:opacity-50">
                   Del
                 </span>
               </Tooltip>

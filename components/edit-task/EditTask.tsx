@@ -10,13 +10,13 @@ import {
   ModalFooter
 } from '@nextui-org/modal'
 
-export default function AddNewTask () {
+export default function EditTask () {
   // const router = useRouter();
   const {isOpen, onOpen, onOpenChange} = useDisclosure();
   const [newTodo, setNewTodo] = useState("");
   const addTask: any = async (todo: any) => {
-    await fetch(`http://localhost:3001/todos`, {
-      method: "POST",
+    await fetch(`http://localhost:3001/todos/${todo.id}`, {
+      method: "PUT",
       headers: {
         "Content-Type": "application/json",
       },

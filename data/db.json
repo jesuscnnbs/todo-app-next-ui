@@ -1,11 +1,6 @@
 {
   "todos": [
     {
-      "id": 1,
-      "title": "Hacer homework",
-      "completed": false
-    },
-    {
       "id": 2,
       "title": "Proyecto IT",
       "completed": false
@@ -19,6 +14,21 @@
       "id": 4,
       "title": "Arreglar retrete",
       "completed": false
+    },
+    {
+      "title": "dddddasda",
+      "completed": false,
+      "id": 7
+    },
+    {
+      "title": "Camaleón",
+      "completed": false,
+      "id": 8
+    },
+    {
+      "title": "ñañañañaña",
+      "completed": false,
+      "id": 9
     }
   ]
 }
